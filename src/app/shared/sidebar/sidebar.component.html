@@ -1,0 +1,13 @@
+<div class="bg-black border-right p-3" id="sidebar">
+
+    <h3 class="text-light">
+      Gifs-App
+    </h3>
+
+    <div  class="list-group list-reset">
+      <!-- donde se apluique el ng form se repetira el elemento del arreglo -->
+      <a (click)="buscar(nombre)" *ngFor="let nombre of historial" class="list-group-item list-group-item-action my-2" href="#">{{nombre |titlecase}}</a>
+    </div>
+
+</div>
+
